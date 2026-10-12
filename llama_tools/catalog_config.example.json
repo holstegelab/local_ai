@@ -1,0 +1,34 @@
+{
+  "key_directory": "Key files ID to ID",
+  "canonical_priority": ["participantid", "100plusid", "100id", "bigid", "donorid"],
+  "missing_values": [],
+  "person_namespaces": [],
+  "rules": [
+    {
+      "enabled": false,
+      "path": "Key files ID to ID/EDIT_KEY_FILE.tsv",
+      "sheet": "table",
+      "header_row": 1,
+      "id_columns": {"ParticipantID": "participantid", "Tube ID": "study_tube_id"},
+      "person_columns": ["ParticipantID"]
+    },
+    {
+      "enabled": false,
+      "path": "Plasma proteomics/EDIT_DATA_FILE.csv",
+      "sheet": "table",
+      "id_columns": {"Sample ID": "study_tube_id"},
+      "materials": ["plasma"],
+      "data_types": ["proteomics"],
+      "presence_columns": ["EDIT_MEASUREMENT_COLUMN"]
+    },
+    {
+      "enabled": false,
+      "path": "Biomaterials/EDIT_MANIFEST.xlsx",
+      "sheet": "EDIT_SHEET",
+      "id_columns": {"ParticipantID": "participantid"},
+      "material_column": "Sample type",
+      "material_values": {"Whole blood": "blood", "Plasma": "plasma", "Cortex": "brain", "CSF": "csf"},
+      "data_types": ["biomaterial manifest"]
+    }
+  ]
+}

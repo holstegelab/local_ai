@@ -1,0 +1,38 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Local environments, weights and provenance
+conda-env/
+models/
+*.gguf
+setup-*.json
+
+# Research data, private selections and derived reports
+sources/
+outputs/
+reports/
+catalogs/
+fair_runs/
+data/
+rd-mount/
+researchdrive/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.sqlite
+*.sqlite-*
+*.db
+*.jsonl
+*.log
+catalog_config.json
+rclone.conf
+*.pem
+*.key
